@@ -74,7 +74,7 @@
 
   function createStars() {
     const starsContainer = document.getElementById('stars');
-    const starCount = 150;
+    const starCount = 350;
 
     for (let i = 0; i < starCount; i++) {
       const star = document.createElement('div');

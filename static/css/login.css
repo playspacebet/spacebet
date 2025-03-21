@@ -1,0 +1,151 @@
+/* Importing fonts and setting default styles */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Styling the body and setting background image */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../../../spacebet/static/background2.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Styling the form box */
+.form-box {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Styling the heading */
+h2 {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+
+/* Styling the input box */
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+
+/* Styling the input box label */
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+/* Styling the input box input */
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+
+/* Styling the ion-icon in the input box */
+.inputbox ion-icon {
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}
+
+/* Styling the input box label on focus, valid, and hover */
+.inputbox input:focus ~ label,
+.inputbox input:valid ~ label,
+.inputbox:hover input:not(:placeholder-shown) ~ label {
+    top: -10px;
+    font-size: 0.8em;
+}
+
+/* Styling the "Forgot" container */
+.forgot {
+    margin: 15px 0;
+    font-size: 0.9em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling the input in the "Forgot" container */
+.forgot label input {
+    margin-right: 3px;
+}
+
+/* Styling the link in the "Forgot" container */
+.forgot label a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#fspace {
+    padding: 20px;
+}
+
+/* Styling the link hover effect in the "Forgot" container */
+.forgot label a:hover {
+    text-decoration: underline;
+}
+
+/* Styling the button */
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+/* Styling the registration section */
+.register {
+    font-size: 0.9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+/* Styling the link in the registration section */
+.register p a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Styling the link hover effect in the registration section */
+.register p a:hover {
+    text-decoration: underline;
+}

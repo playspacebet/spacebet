@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/register.css') }}">
+    <title>User Registration</title>
+</head>
+
+<body>
+    <div class="registration-form">
+        <h2>User Registration</h2>
+        <form action="{{ url_for('register') }}" method="post">
+            <!-- Email Input Group -->
+            <div class="form-group">
+                <input type="email" id="email" name="email" required>
+                <label for="email">Email:</label>
+                <span></span>
+            </div>
+
+            <!-- Password Input Group -->
+            <div class="form-group">
+                <input type="password" id="password" name="password" required>
+                <label for="password">Password:</label>
+                <span></span>
+            </div>
+
+            <!-- Confirm Password Input Group -->
+            <div class="form-group">
+                <input type="password" id="confirm_password" name="confirm_password" required>
+                <label for="confirm_password">Confirm Password:</label>
+                <span></span>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Register</button>
+        </form>
+
+        <p>Already have an account? <a href="{{ url_for('login') }}">Login here</a></p>
+    </div>
+</body>
+
+</html>
